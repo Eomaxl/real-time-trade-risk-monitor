@@ -16,12 +16,12 @@ public class FixSession {
     private String beginString;
     private String senderCompId;
     private String targetCompId;
-    private STATUS status;
+    private FIX_STATUS status;
     private Timestamp lastHeartBeat;
     private Timestamp createdAt;
     private Timestamp updatedAt;
 }
 
-enum STATUS {
+enum FIX_STATUS {
     ACTIVE, INACTIVE, DISCONNECTED, CLOSED
 }
